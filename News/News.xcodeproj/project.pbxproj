@@ -1127,7 +1127,7 @@
 				TargetAttributes = {
 					942DCF071F6010E1001AD160 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = CK4C7KZJ97;
+						DevelopmentTeam = GH2C2HR4XJ;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -1656,8 +1656,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CK4C7KZJ97;
+				DEVELOPMENT_TEAM = GH2C2HR4XJ;
 				INFOPLIST_FILE = "$(SRCROOT)/News/Classes/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrscy.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1677,8 +1678,9 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CK4C7KZJ97;
+				DEVELOPMENT_TEAM = GH2C2HR4XJ;
 				INFOPLIST_FILE = "$(SRCROOT)/News/Classes/Others/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hrscy.News;
 				PRODUCT_NAME = "$(TARGET_NAME)";

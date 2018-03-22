@@ -48,9 +48,21 @@ class DongtaiDetailHeaderView: UIView, NibLoadable {
                 }
             }
             /// 防止因为 cell 重用机制，导致数据错乱现象出现
-            if middleView.contains(postVideoOrArticleView) { postVideoOrArticleView.removeFromSuperview() }
-            if middleView.contains(collectionView) { collectionView.removeFromSuperview() }
-            if middleView.contains(originThreadView) { originThreadView.removeFromSuperview() }
+            if #available(iOS 11.0, *) {
+                if middleView.contains(postVideoOrArticleView) { postVideoOrArticleView.removeFromSuperview() }
+            } else {
+                // Fallback on earlier versions
+            }
+            if #available(iOS 11.0, *) {
+                if middleView.contains(collectionView) { collectionView.removeFromSuperview() }
+            } else {
+                // Fallback on earlier versions
+            }
+            if #available(iOS 11.0, *) {
+                if middleView.contains(originThreadView) { originThreadView.removeFromSuperview() }
+            } else {
+                // Fallback on earlier versions
+            }
             
             switch dongtai.item_type {
             case .postVideoOrArticle, .postVideo, .answerQuestion, .proposeQuestion, .forwardArticle, .postContentAndVideo: // 发布了文章或者视频

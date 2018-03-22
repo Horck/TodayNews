@@ -31,7 +31,11 @@ class WeitoutiaoCell: UITableViewCell, RegisterCellFromNib {
             contentLabelHeight.constant = aNews.contentH
             middleViewHeight.constant = aNews.collectionViewH
             layoutIfNeeded()
-            if middleView.contains(collectionView) { collectionView.removeFromSuperview() }
+            if #available(iOS 11.0, *) {
+                if middleView.contains(collectionView) { collectionView.removeFromSuperview() }
+            } else {
+                // Fallback on earlier versions
+            }
             if aNews.thumb_image_list.count != 0 {
                 middleView.addSubview(collectionView)
                 collectionView.frame = CGRect(x: 15, y: 0, width: aNews.collectionViewW, height: aNews.collectionViewH)

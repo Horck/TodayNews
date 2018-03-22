@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
         return addChannelButton
     }()
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         UIApplication.shared.keyWindow?.theme_backgroundColor = "colors.windowColor"
